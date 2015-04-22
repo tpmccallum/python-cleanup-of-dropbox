@@ -27,7 +27,7 @@ def deleteTheFile(pathToFile):
 present = getPresent()
 
 #access the drop box account
-client = dropbox.client.DropboxClient("_GSRrTwYHmEAAAAAAAAAB1zpOghn4aJz2E04vC-lmC-oENW1pv0O3DUccAkoV43h")
+client = dropbox.client.DropboxClient("INSERT_API_KEY")
 
 #get a dict of all files in the specific dropbox api folder
 folder_metadata = client.metadata('/')
