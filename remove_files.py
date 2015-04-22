@@ -16,7 +16,8 @@ def getTimeDifferenceInSeconds(present, past):
     return d.total_seconds()
 
 def getDeletionApproval(timeDifferenceInSeconds):
-    # 1, 209, 600 seconds in 10 days
+    # 1, 209, 600 seconds in 14 days (60 x 60 x 24 x 14)
+    # 864, 000 seconds in 10 days (60 x 60 x 24 x 10)
     if timeDifferenceInSeconds > 864000:
         return True
 
